@@ -10,10 +10,13 @@ void main()
 	int size_project;
 	double work;
 	double time;
+	
+	printf("Choose the mode/n 1 - normal\n 2 - intermediate\n 3 - built-in");
+	scanf("%d", &option);
 		
 	printf("enter the size of the project(KSLOC): ");
 	scanf("%d", &size_project);
-	if(size_project < 50){
+	/*if(size_project < 50){
 		printf("normal mode\n");
 		option = 1;
 	} else if(size_project >= 50 && size_project < 500){
@@ -22,9 +25,8 @@ void main()
 	} else if(size_project >= 500){
 		printf("built-in mode\n");
 		option = 3;
-	}
+	}*/
 	
-		
 	switch(option){
 		case 1:
 			work = 3.2 * EAF * pow(size_project, 1.05);
